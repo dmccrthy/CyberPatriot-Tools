@@ -1,0 +1,11 @@
+Version: 1 *Initial Commit
+
+-Windows Script:
+    -Reworked menu system to be more intuitive
+    -Combined Password policy, audit policy, and lockout policy into one script
+    -Added reset script to help with testing
+    -Reworked secpol portion entirely
+    -Added password complexity to secpol script
+
+-General:
+    -Added sample readme and answers from practice round
