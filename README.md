@@ -1,4 +1,4 @@
-# CyberPatriot Materials
+# CyberPatriot Tools
 This is a collection of scripts, checklists, sample content, and practice vms for CyberPatriot. Please note that much of this is incomplete as I am still working on it.
 # Contents
 ## 1: Checklists
