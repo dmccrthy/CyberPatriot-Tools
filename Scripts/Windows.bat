@@ -19,8 +19,6 @@ rem MAIN PAGE
 	echo -------------------------------------------------
 	echo -------------Windows Quick Config----------------
 	echo -------------------------------------------------
-	echo --------------Created by: Dan M------------------
-	echo -------------------------------------------------
 	echo 1 - User Controls
 	echo 2 - Set Local SecPol
 	echo 3 - Disable guest/admin	
@@ -53,10 +51,10 @@ rem USER CONTROL PAGE
 :userCtrl
 	cls
 	echo -------------------------------------------------
-	echo 1 - Set User Properties
-	echo 2 - Create User
-	echo 3 - Disable User
-	echo 4 - Change All Passwords
+	echo 1 - Test1
+	echo 2 - Test2
+	echo 3 - Test3
+	echo 4 - Test4
 	echo 5 - Return
 	echo -------------------------------------------------
 	set /p answer=Choose an option: 
@@ -141,11 +139,11 @@ rem THIS IS THE START OF SCRIPT COMPONENTS
 	goto :menu
 
 :secPol
+
+	echo Loading Default Config...
 	reg add HKEY_CURRENT_USER\Control Panel\Desktop /v SCRNSAVE.EXE /t REG_SZ /d C:\Windows\system32\Bubbles.scr /f
 	secedit /configure /db c:\windows\security\local.sdb /cfg D:\Scripts\full-config.inf /overwrite
-	goto :menu
 
-:secPol1
 	echo Setting password policy...
 	net accounts /minpwlen:10
 	net accounts /maxpwage:60
@@ -302,9 +300,6 @@ rem THIS IS THE START OF SCRIPT COMPONENTS
 	netsh advfirewall reset
 	
 	pause
-	goto :menu
-	
-:badFiles
 	goto :menu
 
 :services

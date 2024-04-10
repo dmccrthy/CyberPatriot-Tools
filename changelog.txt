@@ -1,3 +1,16 @@
+Version: 1.2
+
+-Windows Script:
+    -Fixed secpol function
+    -Removed redundant functions
+
+-General:
+    -Fixed sample content formatting
+    -Updated Readme to include misc details for scripts
+    -Added Windows 10 checklist draft
+
+----------------------------------------------------------------
+
 Version: 1 *Initial Commit
 
 -Windows Script:
