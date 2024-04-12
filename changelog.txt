@@ -3,6 +3,7 @@ Version: 1.2
 -Windows Script:
     -Fixed secpol function
     -Removed redundant functions
+    -Resolve password generator error
 
 -General:
     -Fixed sample content formatting

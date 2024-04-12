@@ -126,15 +126,8 @@ rem THIS IS THE START OF SCRIPT COMPONENTS
 :allPass
 	echo Changing all user passwords
 	
-	endlocal
-	setlocal EnableExtensions
-	for /F "tokens=2* delims==" %%G in ('
-		wmic UserAccount where "status='ok'" get name >null
-	') do for %%g in (%%~G) do (
-		net user %%~g Cyb3rPatr!0t$
-		)
-	endlocal
-	setlocal enabledelayedexpansion	
+	cscript "passwd.vbs"
+
 	pause
 	goto :menu
 
